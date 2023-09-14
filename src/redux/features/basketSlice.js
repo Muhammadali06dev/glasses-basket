@@ -16,8 +16,7 @@ const basketSlice = createSlice({
          state.products.forEach((item, i) => {
             if (i === action.payload) {
                item.amount += 1
-               state.basket += 1
-               state.total += item.price
+
             }
          })
       },
@@ -25,21 +24,30 @@ const basketSlice = createSlice({
          state.products.forEach((item, i) => {
             if (i === action.payload && item.amount > 0) {
                item.amount -= 1
-               state.basket -= 1
-               state.total -= item.price
+
             }
          })
       },
       remover: (state, action) => {
-         state.total -= state.products[action.payload].price * state.products[action.payload].amount
-         state.basket -= state.products[action.payload].amount
          state.products = state.products.filter((item, i) => {
             return i !== action.payload
          })
          state.amount -= 1
+      },
+      updateTotal: (state) => {
+         let total = 0
+         let basket = 0
+
+         state.products.forEach((item) => {
+            total += item.amount * item.price
+            basket += item.amount
+         })
+         state.total = total
+         state.basket = basket
+
       }
    }
 })
 
 export default basketSlice.reducer
-export const { increment, decrement, remover } = basketSlice.actions
+export const { increment, decrement, remover, updateTotal } = basketSlice.actions

@@ -5,9 +5,10 @@ import Product from "../product/Product"
 
 function Products() {
    const { basket, total, products, amount } = useSelector((state) => state.basket)
+
    if (!amount) {
       return (
-         <div className="text-center text-xl my-5 font-medium">Your basket is empty! 😢</div>
+         <div className="text-center text-xl my-5 font-bold">Your basket is empty! 😢</div>
       )
    }
    return (

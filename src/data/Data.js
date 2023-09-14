@@ -4,7 +4,7 @@ export const storeData = [
       price: 128.35,
       image:
          "https://df5apg8r0m634.cloudfront.net/p/8205/middle-1-524eaf4916f3c359277b07c31d723329.webp",
-      amount: 0,
+      amount: 1,
       id: 1
    },
    {
@@ -12,7 +12,7 @@ export const storeData = [
       price: 79.48,
       image:
          "https://df5apg8r0m634.cloudfront.net/p/8424/middle-1-7a80571890295bff0041be3b008cd0d0.webp",
-      amount: 0,
+      amount: 1,
       id: 2,
    },
    {
@@ -20,7 +20,7 @@ export const storeData = [
       price: 82.5,
       image:
          "https://df5apg8r0m634.cloudfront.net/p/8711/middle-1-10412a8ae4c5bbbfd3c417d65339b7b5.webp",
-      amount: 0,
+      amount: 1,
       id: 3
    },
    {
@@ -28,7 +28,7 @@ export const storeData = [
       price: 98.2,
       image:
          "https://df5apg8r0m634.cloudfront.net/p/4309/middle-1-PEo3YYCJpS.webp",
-      amount: 0,
+      amount: 1,
       id: 4
    },
    {
@@ -36,7 +36,7 @@ export const storeData = [
       price: 96.49,
       image:
          "https://df5apg8r0m634.cloudfront.net/p/4511/middle-1-yjnvHQGXTE.webp",
-      amount: 0,
+      amount: 1,
       id: 5
    },
 ];
